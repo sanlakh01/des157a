@@ -1,17 +1,20 @@
-.bg_img{
+.body{
     background-image: url(images/stars.svg);
     width: 100%;
     height: 100%;
+    background-color: #000009;
 }
 /* -------------------------------------------- */
 /* text and font styles */
-h2{
+p, li{
     font-family: 'Lato', sans-serif;
-    font-style: 700;
+}
+h2{
+    font-family: 'Lilita One', sans-serif;
+    font-style: 400;
 }
 
-p{
-    font-family: 'Lato', sans-serif;
+p{    
     font-style: 400;
 }
 /* -------------------------------------------- */
@@ -20,7 +23,13 @@ ul li{
     list-style-type: none;
 }
 
-ul li a:hover{
+a:link, a:visited{
     text-decoration: none;
+    color: black;
 }
 /* -------------------------------------------- */
+/*heart emoji*/
+i{
+    font-size: 16px;
+    color: black;
+}
