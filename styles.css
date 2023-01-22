@@ -21,6 +21,71 @@ header{
     
 }
 /* ------------------------------------------------------- */
+/*constellations styling*/
+.pi, .aq, .cap, .sa, .sc, .li, .vi, .le, .can, .ge, .ta, .ar{
+    position: absolute;
+    animation: twinkle 4s infinite;
+}
+.pi{
+    top: 23%;
+    left: 20%;
+}
+.aq{
+    bottom: 2%;
+    right: 2%;
+}
+.cap{
+    top: 1%;
+    right: 1%;
+}
+.sa{
+    bottom: 4%;
+    left: 1%; 
+}
+.sc{
+    bottom: 6%;
+    right: 2%;
+}
+.li{
+    top: 3%;
+    left: 4%;
+}
+.vi{
+    top: 10%;
+    right: 3%;
+}
+.le{
+    top: 8%;
+    left: 28%;
+}
+.can{
+    top: 20%;
+    right: 5%;
+}
+.ge{
+    top: 46%;
+    left: 17%;
+}
+.ta{
+    top: 30%;
+    right: 2%;
+}
+.ar{
+    top: 20%;
+    left: 2%;
+}
+@keyframes twinkle{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+/* ------------------------------------------------------- */
 /* text and font styles */
 p, li{
     font-family: 'Lato', sans-serif;
@@ -43,10 +108,11 @@ footer p, footer a{
 /* ------------------------------------------------------- */
 /*content boxes*/
 article div{
-    background-color:#D6D6D6;
+    background-color:#d6d6d6dd;
     border-radius: 25px;
-    padding: 2%;
+    padding: 2% 4% 2% 4%;
     margin: 5%;
+    box-shadow: 20px -20px 0 -5px #3d3d3ddd; /*box behind context box*/
 }
 /* ------------------------------------------------------- */
 /* list and links style */
@@ -69,15 +135,42 @@ a:link, a:visited{
 footer a:visited, footer a:link{
     color: #D6D6D6;
 }
-a:hover{
-    border-bottom: solid 2px #000009;
+
+ul li a{
+    display: inline-block;
+    padding-bottom: 1px;    
+}
+
+ul li a:after{
+    display: block;
+    content: '';
+    border-bottom: solid 2px #000009;  
+    transform: scaleX(0);  
     transition: transform 250ms ease-in-out;
 }
-a:after:hover{
-    transform: scaleX(1);
+
+ul li a:hover:after { 
+    transform: scaleX(1); 
 }
 /* ------------------------------------------------------- */
 /*footer styling*/
 footer{
     margin: auto 5% 5% 8%;
 }
+p a{
+    display: inline-block;
+    padding-bottom: 1px;    
+}
+
+p a:after{
+    display: block;
+    content: '';
+    border-bottom: solid 2px #D6D6D6;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+p a:hover:after { 
+    transform: scaleX(1); 
+}
+/* ------------------------------------------------------- */
