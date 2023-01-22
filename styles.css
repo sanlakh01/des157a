@@ -86,6 +86,32 @@ header{
     }
 }
 /* ------------------------------------------------------- */
+/*fade in out hover*/
+#bg:hover{
+    animation: fadeIn 1s forwards;
+ }
+#bg {
+    animation: fadeOut 0.1s;
+    opacity:0;
+ }
+@keyframes fadeOut {
+    0% {
+       opacity: 1;
+    }
+    100% {
+       opacity: 0;
+    }
+ }
+ 
+ @keyframes fadeIn {
+    0%{
+       opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
+ }
+/* ------------------------------------------------------- */
 /* text and font styles */
 p, li{
     font-family: 'Lato', sans-serif;
@@ -95,6 +121,7 @@ h2{
     font-weight: 400;
     color: #3D3D3D;
     margin-top: 2%;
+    margin-bottom: 0;
 }
 
 p{    
@@ -107,7 +134,7 @@ footer p, footer a{
 }
 /* ------------------------------------------------------- */
 /*content boxes*/
-article div{
+.left, .middle, .right{
     background-color:#d6d6d6dd;
     border-radius: 25px;
     padding: 2% 4% 2% 4%;
@@ -117,11 +144,13 @@ article div{
 /* ------------------------------------------------------- */
 /* list and links style */
 ul{
-    padding-left: 5%;
+    margin: 0%;
+    padding: 1% 1% 1% 5%;
 }
 ul li{
     list-style-type: none;
     padding: 1% 0 1% 0;
+    font-size: 18px;
 }
 
 ul li a{
@@ -173,4 +202,6 @@ p a:after{
 p a:hover:after { 
     transform: scaleX(1); 
 }
+/* ------------------------------------------------------- */
+/*media query - desktop*/
 /* ------------------------------------------------------- */
