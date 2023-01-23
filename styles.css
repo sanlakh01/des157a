@@ -239,6 +239,7 @@ p a:hover:after {
     .pi, .aq, .cap, .sa, .sc, .li, .vi, .le, .can, .ge, .ta, .ar{
         position: absolute;
         width: 10%;
+        max-width: 10%;
     }
     .pi{
         top: 23%;
