@@ -204,4 +204,89 @@ p a:hover:after {
 }
 /* ------------------------------------------------------- */
 /*media query - desktop*/
+@media only screen and (min-width: 700px){
+
+    main{
+        margin-top:0;
+    }
+    header{
+        display: block;
+        margin: 5% 1% 2% 10%;
+    }
+    header img{
+        width: 8%;
+        padding-right: 2%;
+    }
+    article{
+        display: flex;
+        gap: 1%;
+    }
+    .left, .middle, .right{
+        flex: 1;
+        margin: 4% 1% 1% 1%;
+    }
+    footer{
+        margin-bottom: 1%;
+        margin-left: 4%;
+    }
+    .right #bg, .middle #bg{
+        height: 100%;
+    }
+    ul{
+        margin-top: 2%;
+    }
+    /*repositioning constellations*/
+    .pi, .aq, .cap, .sa, .sc, .li, .vi, .le, .can, .ge, .ta, .ar{
+        position: absolute;
+        width: 10%;
+    }
+    .pi{
+        top: 23%;
+        left: 50%;
+    }
+    .aq{
+        bottom: 4%;
+        right: 2%;
+    }
+    .cap{
+        top: 1%;
+        right: 1%;
+    }
+    .sa{
+        bottom: 4%;
+        left: 1%; 
+    }
+    .sc{
+        bottom: 16%;
+        right: 12%;
+    }
+    .li{
+        top: 3%;
+        left: 4%;
+    }
+    .vi{
+        top: 60%;
+        right: 43%;
+    }
+    .le{
+        top: 8%;
+        left: 28%;
+    }
+    .can{
+        top: 25%;
+        right: 25%;
+    }
+    .ge{
+        top: 46%;
+        left: 17%;
+    }
+    .ta{
+        top: 30%;
+        right: 2%;
+    }
+    .ar{
+        bottom: 16%;
+        left: 20%;
+    }
+}
 /* ------------------------------------------------------- */
