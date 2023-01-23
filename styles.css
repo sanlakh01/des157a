@@ -87,10 +87,10 @@ header{
 }
 /* ------------------------------------------------------- */
 /*fade in out hover*/
-#bg:hover{
+.bg:hover{
     animation: fadeIn 1s forwards;
  }
-#bg {
+.bg {
     animation: fadeOut 0.1s;
     opacity:0;
  }
@@ -229,7 +229,7 @@ p a:hover:after {
         margin-bottom: 1%;
         margin-left: 4%;
     }
-    .right #bg, .middle #bg{
+    .right .bg, .middle .bg{
         height: 100%;
     }
     ul{
