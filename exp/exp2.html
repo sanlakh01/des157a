@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+<body>
+    <h1>JavaScript Experiment 2</h1>
+    <div id="myDiv">
+        <p>This is your color.</p>
+    </div>
+    <style>
+        div{
+            border: 2px solid black;
+            width: 1000px;
+            height: 200px;
+        }
+    </style>
+    <script>
+    //Ask the user to pick a color of the rainbow, and change the box background accordingly. The text inside the box also tells them the color they picked, as does the console. If they pick a color that is not on the rainbow, it changes the div text on the webpage to: "No such color in database :( Try again." The console log will continue to let them know what color they picked. 
+    
+        var rainbow = ["red", "orange","yellow","green", "blue", "indigo", "violet"];
+        var userColor = prompt("Please pick a color of the rainbow (VIBGYOR).","").toLowerCase();
+
+        var bg = document.getElementById("myDiv");
+
+        function colorMatch(UC){
+            if(UC == rainbow[0]){
+                bg.style.backgroundColor = "#FF0000";
+                return UC;
+            }
+            else if(UC == rainbow[1]){
+                bg.style.backgroundColor = "#FF8700";
+                return UC;
+            }
+            else if(UC == rainbow[2]){
+                bg.style.backgroundColor = "#DEFF0A";
+                return UC;
+            }
+            else if(UC == rainbow[3]){
+                bg.style.backgroundColor = "#0AFF99";
+                return UC;
+            }
+            else if(UC == rainbow[4]){
+                bg.style.backgroundColor = "#0AEFFF";
+                return UC;
+            }
+            else if(UC == rainbow[5]){
+                bg.style.backgroundColor = "#580AFF";
+                return UC;
+            }
+            else if(UC == rainbow[6]){
+                bg.style.backgroundColor = "#BE0AFF";
+                return UC;
+            }
+            else{
+                bg.innerHTML = "No such color in database :( Try again."
+                return UC;
+            }
+        }
+        console.log(`Your color input is: ${colorMatch(userColor)}`);
+    </script>
+</body>
+</html>
