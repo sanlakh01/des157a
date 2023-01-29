@@ -8,7 +8,7 @@ body{
 }
 /* ------------------------------------------------------- */
 /* text styling */
-h3,p,date{
+p,date{
     color: #d6d6d6;
 }
 p, date{
@@ -23,6 +23,22 @@ header h3{
 }
 .jEntry h3{
     font-family: 'Lilita One', sans-serif;
+    font-kerning: normal;
+    margin-top: 0;
+    color:#999999;
+}
+.subhead{
+    font-style: italic;
+    color:#999999;
+}
+#top a{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+a:link, a:visited{
+    text-decoration: underline;
+    color: #d6d6d6;
 }
 /* ------------------------------------------------------- */
 /*header display styling*/
@@ -41,7 +57,7 @@ header h3{
     margin: 0;
 }
 /* ------------------------------------------------------- */
-/*main content styling*/
+/*main content positioning*/
 main{
     display: flex;
 }
@@ -50,6 +66,22 @@ main{
 }
 .jEntry{
     flex: 2;
+}
+/* ------------------------------------------------------- */
+/*article styling*/
+.jEntry{
+    border: 1px solid #3d3d3d;
+    border-radius: 10px;
+    padding: 2%;
+    margin: 2% 0 2% 2%;
+    background-color:#000009b8;
+}
+.subhead #top{
+    margin-bottom: 3px;
+}
+.subhead #bottom{
+    margin-top: 0;
+    margin-bottom: 25px;
 }
 /* ------------------------------------------------------- */
 /*footer styling*/
