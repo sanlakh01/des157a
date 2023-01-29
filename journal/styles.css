@@ -40,6 +40,12 @@ a:link, a:visited{
     text-decoration: underline;
     color: #d6d6d6;
 }
+.moon p, .moon date{
+    font-style: italic;
+}
+.moon p{
+    font-weight: 700;
+}
 /* ------------------------------------------------------- */
 /*header display styling*/
 header{
@@ -82,6 +88,23 @@ main{
 .subhead #bottom{
     margin-top: 0;
     margin-bottom: 25px;
+}
+/* ------------------------------------------------------- */
+/*moon image section styling*/
+.moon{
+    margin: 2% 2% 2% 0;
+    padding-top: 18%;
+}
+.moon img{
+    width: 80%;
+    opacity: 80%;
+    margin-left: 15%;
+}
+.moon p{
+    text-align: center;
+}
+date{
+    margin-left: 25%;
 }
 /* ------------------------------------------------------- */
 /*footer styling*/
