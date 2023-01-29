@@ -1,28 +1,63 @@
+/* body and page margin */
 body{
     background-image: url(../images/stars.svg);
     width: 98;
     height: 100%;
     background-color: #000009;
+    margin: 2%;
 }
 /* ------------------------------------------------------- */
 /* text styling */
-h2,h3,p{
+h3,p,date{
     color: #d6d6d6;
 }
-h2,p{
+p, date{
     font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
-h3{
+header h3{
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    color: #999999;
+}
+.jEntry h3{
     font-family: 'Lilita One', sans-serif;
 }
 /* ------------------------------------------------------- */
 /*header display styling*/
 header{
     display: flex;
+    justify-content: space-between;
 }
 #line1, #line2{
-    height: 2px;
-    width: 40%;
+    height: 2.5px;
+    width: 43%;
     background-color: #3d3d3d;
     border-radius: 99px;
+    margin-top: 0.7%;
 }
+header h3{
+    margin: 0;
+}
+/* ------------------------------------------------------- */
+/*main content styling*/
+main{
+    display: flex;
+}
+.moon{
+    flex: 1;
+}
+.jEntry{
+    flex: 2;
+}
+/* ------------------------------------------------------- */
+/*footer styling*/
+footer p{
+    text-align: center;
+    font-style: italic;
+    color: #999999;
+    font-weight: 700;
+    font-kerning: normal;
+}
+/* ------------------------------------------------------- */
