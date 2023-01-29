@@ -8,10 +8,8 @@ body{
 }
 /* ------------------------------------------------------- */
 /* text styling */
-p,date{
+p{
     color: #d6d6d6;
-}
-p, date{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
@@ -51,6 +49,7 @@ a:link, a:visited{
 header{
     display: flex;
     justify-content: space-between;
+    margin: 1% 0 1% 0;
 }
 #line1, #line2{
     height: 2.5px;
@@ -78,7 +77,7 @@ main{
 .jEntry{
     border: 1px solid #3d3d3d;
     border-radius: 10px;
-    padding: 2%;
+    padding: 2% 4% 2% 4%;
     margin: 2% 0 2% 2%;
     background-color:#000009b8;
 }
@@ -89,25 +88,31 @@ main{
     margin-top: 0;
     margin-bottom: 25px;
 }
+.jEntry p{
+    line-height: 1.5em;
+}
 /* ------------------------------------------------------- */
 /*moon image section styling*/
 .moon{
-    margin: 2% 2% 2% 0;
-    padding-top: 18%;
+    margin: 8% 2% 2% 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 .moon img{
-    width: 80%;
-    opacity: 80%;
-    margin-left: 15%;
+    width: 50%;
+    opacity: 90%;
 }
 .moon p{
     text-align: center;
-}
-date{
-    margin-left: 25%;
+    margin: 0;
 }
 /* ------------------------------------------------------- */
 /*footer styling*/
+footer{
+    margin-top: 3%;
+}
 footer p{
     text-align: center;
     font-style: italic;
