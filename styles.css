@@ -92,7 +92,7 @@ header{
     animation: fadeIn 1s forwards;
  }
 .bg {
-    animation: fadeOut 0.1s;
+    animation: fadeOut 1s;
     opacity:0;
  }
 @keyframes fadeOut {
