@@ -64,7 +64,7 @@ button{
     border: none;
     font-family: "Lato", sans-serif;
     font-style: italic;
-    padding: 15px 30px;
+    padding: 10px 30px;
     border-radius: 60px;
     margin-top: 10px;
     display: block;
@@ -78,10 +78,33 @@ button{
 }
 h3{
     margin-top: 0;
+    text-align: center;
 }
 label{
     font-family: "Lato", sans-serif;
     color: #d6d6d6;
+}
+form{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+input[type=text]{
+    background-color: #000009;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    padding: 10px 10px 3px 10px;
+    width: 200px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px white solid;
+}
+form p{
+    color: #707070;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 /* ------------------------------------------------------- */
 /*media query - desktop*/
@@ -95,7 +118,6 @@ label{
     .left{
         flex: 1;
         margin-left: 2%;
-        margin-right: 2%;
     }
     img{
         max-width: 400px;
@@ -105,10 +127,21 @@ label{
     }
     main{
         flex: 2;
-        padding: 2%;
+        padding: 20px 5%;
         margin-left: 1%;
     }
     .story p{
         font-size: 16px;
+    }
+    form{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    h3{
+        margin-bottom: 30px;
+    }
+    input[type=text]{
+        height: 30px;
+        padding-bottom: 2px;
     }
 }
