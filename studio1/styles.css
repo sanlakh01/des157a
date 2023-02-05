@@ -53,12 +53,12 @@ main{
 /* ------------------------------------------------------- */
 /*story styling*/
 .story{
-    display: block;
+    display: none;
 }
 .story p:first-of-type{
     margin-top: 0;
 }
-button{
+button, input[type=submit]{
     background-color: #d6d6d6;
     color: #3d3d3d;
     border: none;
@@ -74,7 +74,7 @@ button{
 /* ------------------------------------------------------- */
 /*madlib form styling*/
 .madlib{
-    display: none;
+    display: block;
 }
 h3{
     margin-top: 0;
