@@ -134,6 +134,7 @@ input[type=submit]{
     }
     .story p{
         font-size: 16px;
+        line-height: 1.3em;
     }
     form{
         display: grid;
