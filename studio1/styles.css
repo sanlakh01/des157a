@@ -51,31 +51,20 @@ main{
     margin-left: 10%;
 }
 /* ------------------------------------------------------- */
-/*story styling*/
-.story{
+/*visibility toggle*/
+.show{
+    display: block;
+}
+.hide{
     display: none;
 }
+/* ------------------------------------------------------- */
+/*story styling*/
 .story p:first-of-type{
     margin-top: 0;
 }
-button, input[type=submit]{
-    background-color: #d6d6d6;
-    color: #3d3d3d;
-    border: none;
-    font-family: "Lato", sans-serif;
-    font-style: italic;
-    padding: 10px 30px;
-    border-radius: 60px;
-    margin-top: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 /* ------------------------------------------------------- */
 /*madlib form styling*/
-.madlib{
-    display: block;
-}
 h3{
     margin-top: 0;
     text-align: center;
@@ -105,6 +94,19 @@ form p{
     font-style: italic;
     margin-top: 10px;
     margin-bottom: 30px;
+}
+input[type=submit]{
+    background-color: #d6d6d6;
+    color: #3d3d3d;
+    border: none;
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    padding: 10px 30px;
+    border-radius: 60px;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* ------------------------------------------------------- */
 /*media query - desktop*/
@@ -143,5 +145,10 @@ form p{
     input[type=text]{
         height: 30px;
         padding-bottom: 2px;
+    }
+    input[type=submit]{
+        max-width: 200px;
+        margin-right: 20%;
+        margin: 0;
     }
 }
