@@ -8,7 +8,7 @@ body{
 }
 /* ------------------------------------------------------- */
 /* text styling */
-p{
+p, figcaption{
     color: #d6d6d6;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -43,6 +43,10 @@ a:link, a:visited{
 }
 .moon p{
     font-weight: 700;
+}
+figcaption{
+    font-style: italic;
+    font-size: 10pt;
 }
 /* ------------------------------------------------------- */
 /*header display styling*/
@@ -97,6 +101,15 @@ header h3{
 }
 .jEntry p{
     line-height: 1.5em;
+}
+/* ------------------------------------------------------- */
+/*figure styling*/
+figure{
+    margin-left: 0;
+}
+figcaption{
+    margin-top: 1%;
+    margin-bottom: 3%;
 }
 /* ------------------------------------------------------- */
 /*moon image section styling*/

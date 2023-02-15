@@ -12,7 +12,7 @@
         event.preventDefault();
         processFormData(formData);
         madlib.className = "madlib hide";
-        story.className = "story show"
+        story.className = "story show"; 
     });
 
     function processFormData(formData){
@@ -64,5 +64,7 @@
             eachField.value = ""; //reset data back to blank. 
         }
     }
+
+    
 
 } )();
