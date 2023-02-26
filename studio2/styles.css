@@ -1,9 +1,13 @@
 /* ------------------------------------------------------- */
 /* body styles */
 body{
-    background-color: #000009;
+    background-color: #000;
     margin-left: auto;
     margin-right: auto;
+}
+
+img{
+    display: block;
 }
 /* ------------------------------------------------------- */
 /* text and font styles */
@@ -16,10 +20,17 @@ h1{
     font-family: 'Lilita One', sans-serif;
     font-weight: 400;
 }
-
 p{    
     font-weight: 400;
 }
+#overlay p{
+    color: #3d3d3d;
+    text-align: left;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
 /* ------------------------------------------------------- */
 /* img container style */
 #container {
@@ -29,44 +40,58 @@ p{
     position: relative;
     margin: auto;
 }
-#container img {
+#bg {
     display: block;
     position: absolute;
     transition: all 3s ease;
 }
 /* ------------------------------------------------------- */
 /* overlay styles */
-.hidden {
-    display: none;
-}
-
-.showing {
-    display: block;
+#green, #cuffs, #copper, #phases, #black{
+    position: relative;
 }
 #overlay{
     position: absolute;
-    top: 115px;
-    left: 455px;
-    width: 100vw;
-    height: 100vh;
-}
-
-#overlay article{
     box-sizing: border-box;
-    background-color: #fff;
-    padding: 20px;
-    width: 50vw;
-    height: 80vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 250px;
+    background-color: #d3c9e3da;
+    border-radius: 20px;
+    border: 2px solid #3d3d3d;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    transition-property: opacity, visibility;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+}
+#green #overlay, #copper #overlay, #phases #overlay{
+    left: -260px;
+}
+#cuffs #overlay, #black #overlay{
+    right: -260px;
+}
+#overlay img{
+    flex: 1;
+    border-radius: 10px;
+    border: 1px solid #3d3d3d;
+}
+#overlay p{
+    flex: 2;
+}
+.hide{
+    visibility: hidden;
+    opacity: 0;
+}
+.show{
+    visibility: visible;
+    opacity: 1;
 }
 /* ------------------------------------------------------- */
-/* hover div style
+/* hover div style*/
 #green, #cuffs, #copper, #phases, #black{
     position: absolute;
-    background-color: #707070;
+    /* background-color: #707070; */
 }
 #green{
     height: 120px;
@@ -97,4 +122,4 @@ p{
     height: 70px;
     top: 345px;
     left: 420px;
-}*/
+}
