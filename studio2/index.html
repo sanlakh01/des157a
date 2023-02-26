@@ -6,25 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Every Picture</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&family=Lilita+One&display=swap" rel="stylesheet">
+
     <link href="styles.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>Hover over the moon themed earrings!</h1>
+        <h1>hover over the earrings for a surprise :)</h1>
     </header>
 
-    <div>
-       <img src="images/bg.png" alt="picture of jewelry, notebooks, skincare and makeup on a desk"> 
-       <div id="green"></div>
-       <div id="copper"></div>
-       <div id="cuffs"></div>
-       <div id="phases"></div>
-       <div id="black"></div>
+    <div id="container">
+       <img src="images/bg.jpg" alt="picture of jewelry, notebooks, skincare and makeup on a desk"> 
+       <div id="green">
+            <section id="overlay">
+                <img>
+                <p>These earrings are my favorite moon earrings. I bought these early 2022, from the Davis Street Market - this is from Amoeba Clay. This is also the first moon earring I bought. I picked these up because I wanted green earrings, but they ended up starting my addiction to moon themed stuff.</p>
+                <button class="close">close</button>
+            </section>
+       </div>
+       <!-- <div id="copper overlay" class="showing"></div>
+       <div id="cuffs overlay" class="showing"></div>
+       <div id="phases overlay" class="showing"></div>
+       <div id="black overlay" class="showing"></div> -->
     </div>
     
     <footer>
-        <p>&copy; designed by Santhoshi Ramanathan</p>
+        <p>&copy; 2023. designed <span style="font-style: italic;">with</span> 🤍 <span style="font-style: italic;">by</span> Santhoshi Ramanathan</p>
     </footer>
 </body>
 

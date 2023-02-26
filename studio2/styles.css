@@ -1,0 +1,100 @@
+/* ------------------------------------------------------- */
+/* body styles */
+body{
+    background-color: #000009;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ------------------------------------------------------- */
+/* text and font styles */
+p, h1{
+    font-family: 'Lato', sans-serif;
+    color: #707070;
+    text-align: center;
+}
+h1{
+    font-family: 'Lilita One', sans-serif;
+    font-weight: 400;
+}
+
+p{    
+    font-weight: 400;
+}
+/* ------------------------------------------------------- */
+/* img container style */
+#container {
+    width: 998px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+#container img {
+    display: block;
+    position: absolute;
+    transition: all 3s ease;
+}
+/* ------------------------------------------------------- */
+/* overlay styles */
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+#overlay{
+    position: absolute;
+    top: 115px;
+    left: 455px;
+    width: 100vw;
+    height: 100vh;
+}
+
+#overlay article{
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 20px;
+    width: 50vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* ------------------------------------------------------- */
+/* hover div style
+#green, #cuffs, #copper, #phases, #black{
+    position: absolute;
+    background-color: #707070;
+}
+#green{
+    height: 120px;
+    width: 50px;
+    top: 115px;
+    left: 455px;
+}
+#cuffs{
+    width: 55px;
+    height: 150px;
+    top: 105px;
+    left: 545px;
+}
+#copper{
+    width: 40px;
+    height: 150px;
+    top: 190px;
+    left: 380px;
+}
+#black{
+    width: 50px;
+    height: 80px;
+    top: 260px;
+    left: 450px;
+}
+#phases{
+    width: 50px;
+    height: 70px;
+    top: 345px;
+    left: 420px;
+}*/
