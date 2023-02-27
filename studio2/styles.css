@@ -77,7 +77,9 @@ p{
 #overlay img{
     flex: 1;
     border-radius: 10px;
-    border: 1px solid #3d3d3d;
+    height: 150px;
+    display: block;
+    /* border: 1px solid #3d3d3d; */
 }
 #overlay p{
     flex: 2;
