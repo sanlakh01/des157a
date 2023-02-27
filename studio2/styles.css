@@ -44,6 +44,9 @@ p{
     display: block;
     position: absolute;
     transition: all 3s ease;
+    width: 998px;
+    top: 0;
+    left: 0;
 }
 /* ------------------------------------------------------- */
 /* overlay styles */
@@ -88,38 +91,152 @@ p{
     opacity: 1;
 }
 /* ------------------------------------------------------- */
+/* zoom-in-out styles*/
+.start{
+    transition: all 3s ease;     
+    width: 998px;
+}
+/* green earrings */
+.one{
+    position: absolute;
+    transition: all 3s ease;
+    width: 5032px;
+    top: -580px;
+    left: -1850px;
+}
+/* copper earrings */
+.two{
+    position: absolute;  
+    transition: all 3s ease;
+    width: 5032px;
+    top: -950px;
+    left: -1500px;
+}
+/* cuffs earrings */
+.three{
+    position: absolute;   
+    transition: all 3s ease;
+    width: 5032px;
+    top: -550px;
+    left: -2570px;
+}
+/* white earrings */
+.four{
+    position: absolute;  
+    transition: all 3s ease;
+    width: 5032px;
+    top: -1500px;
+    left: -1700px;
+}
+/* black earrings */
+.five{
+    position: absolute; 
+    transition: all 3s ease;
+    width: 5032px;
+    top: -1150px;
+    left: -2100px;
+}
+/* ------------------------------------------------------- */
 /* hover div style*/
 #green, #cuffs, #copper, #phases, #black{
     position: absolute;
-    /* background-color: #707070; */
 }
 #green{
     height: 120px;
-    width: 50px;
+    width: 90px;
     top: 115px;
-    left: 455px;
+    left: 435px;
 }
 #cuffs{
-    width: 55px;
+    width: 100px;
     height: 150px;
     top: 105px;
-    left: 545px;
+    left: 500px;
 }
 #copper{
-    width: 40px;
-    height: 150px;
+    width: 60px;
+    height: 160px;
     top: 190px;
-    left: 380px;
+    left: 385px;
 }
 #black{
-    width: 50px;
-    height: 80px;
-    top: 260px;
-    left: 450px;
+    width: 70px;
+    height: 110px;
+    top: 235px;
+    left: 440px;
 }
 #phases{
-    width: 50px;
+    width: 60px;
     height: 70px;
-    top: 345px;
-    left: 420px;
+    top: 340px;
+    left: 410px;
+}
+/* ------------------------------------------------------- */
+/* preloader styles*/
+#preloader{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+	left: 0;
+	background: radial-gradient(circle, #d3c9e3 0%, #000 100%);
+	color: #FCFCFC;
+	font-size: 3em;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+#preloader div:first-of-type {
+	margin-bottom: 50px;
+    font-family: "Lilita One", sans-serif;
+    color: #3d3d3d;
+}
+
+.fadeout {
+	animation-name: fadeout;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+.lds-ripple {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+}
+.lds-ripple div {
+	position: absolute;
+	border: 4px solid #FCFCFC;
+	opacity: 1;
+	border-radius: 50%;
+	animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+	animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+	0% {
+		top: 36px;
+		left: 36px;
+		width: 0;
+		height: 0;
+		opacity: 1;
+	}
+	100% {
+		top: 0px;
+		left: 0px;
+		width: 72px;
+		height: 72px;
+		opacity: 0;
+	}
+}
+
+@keyframes fadeout {
+	0%{
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
 }
