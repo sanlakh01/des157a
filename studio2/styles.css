@@ -74,15 +74,24 @@ p{
 #overlay3, #overlay5{
     right: -260px;
 }
-#overlay1 img, #overlay2 img, #overlay3 img, #overlay4 img, #overlay5 img{
+#overlay1 img, #overlay3 img, #overlay4 img, #overlay5 img{
     flex: 1;
     border-radius: 10px;
     height: 150px;
     display: block;
-    /* border: 1px solid #3d3d3d; */
 }
-#overlay1 p, #overlay2 p, #overlay3 p, #overlay4 p, #overlay5 p{
+#overlay2 img{
+    flex: 1;
+    border-radius: 10px;
+    height: 200px;
+    display: block;
+}
+#overlay1 p, #overlay3 p, #overlay4 p, #overlay5 p{
     flex: 2;
+}
+#overlay2 p{
+    flex: 2;
+    padding-top: 15px;
 }
 .hide{
     visibility: hidden;
