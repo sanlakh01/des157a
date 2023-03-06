@@ -7,6 +7,7 @@ body{
 }
 main{
     margin: 1%;
+    /* border-bottom: #3d3d3d 2px solid; */
 }
 /* ------------------------------------------------------- */
 /*text styles*/
@@ -36,6 +37,32 @@ div > h3{
     color: #000009;
     text-align: center;
 }
+#one h3, #two h3{
+    text-align: center;
+}
+/* ------------------------------------------------------- */
+/*header styles*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1%;
+}
+/* ------------------------------------------------------- */
+/*cat pics and name positioning*/
+main{
+    position: relative;
+}
+#one{
+    position: absolute;
+    top: 28px;
+    left: 535px;
+}
+#two{
+    position: absolute;
+    top: -70px;
+    left: 810px;
+}
 /* ------------------------------------------------------- */
 /*status boxes*/
 div{
@@ -59,9 +86,13 @@ section button{
     margin-left: auto;
     margin-right: auto;
 }
+section button:first-of-type{
+    margin-left: 20px;
+}
 /* ------------------------------------------------------- */
 /*content arrangement*/
 main > section:last-of-type{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
