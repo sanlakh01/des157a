@@ -48,6 +48,10 @@ header{
     align-items: center;
     margin: 0 1%;
 }
+header button{
+    background-color: #fcfcfc00;
+    padding: 0 20px;
+}
 /* ------------------------------------------------------- */
 /*cat pics and name positioning*/
 main{
@@ -92,7 +96,27 @@ section button:first-of-type{
 /* ------------------------------------------------------- */
 /*content arrangement*/
 main > section:last-of-type{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
+}
+section:last-of-type div:first-of-type{
+    position: absolute;
+    top: 90px;
+    left: 20px;
+}
+section:last-of-type > img{
+    display: block;
+    position: absolute;
+    left: 478px;
+    z-index: -1;
+}
+section:last-of-type div:last-of-type{
+    position: absolute;
+    left: 0;
+    top: 90px;
+    left: 1100px;
+}
+/* ------------------------------------------------------- */
+/*footer position*/
+footer{
+    margin-top: 570px;
 }
