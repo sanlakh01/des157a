@@ -59,12 +59,12 @@ main{
 }
 #one{
     position: absolute;
-    top: 40px;
+    top: 30px;
     left: 535px;
 }
 #two{
     position: absolute;
-    top: -50px;
+    top: -70px;
     left: 810px;
 }
 /* ------------------------------------------------------- */
