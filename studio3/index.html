@@ -28,39 +28,28 @@
 
     <main>
         <section id="one">
-            <h3>cloud</h3>
+            <h3 class="hide">cloud</h3>
            <img src="images/Scloud.svg" alt="sleeping cloud" width="144"> 
         </section>
         
         <section id="two">
-            <h3>mona</h3>
+            <h3 class="hide">mona</h3>
             <img src="images/Smona.svg" alt="sleeping mona" width="157">
         </section>
 
         <section>
-            <div>
-                <h3>your chance of waking <span style="color: #707070">cloud</span> up is</h3>
+            <div id="cloud" class="hide">
                 <!-- score will be a h3 in here -->
                 <!-- depending on the scenario, "cloud's asleep, cloud's almost awake, or cloud's awake will show" -->
                 <!-- text if it's switching to mona's turn -->
-                <h3>55%</h3>
-                <h3><span style="color: #707070">cloud's</span> almost awake!</h3>
-                <h3><span style="color: #9A8479">mona's</span> turn!</h3>
-                <button>continue?</button>
-                <button><span style="color: #9A8479">mona's</span> turn</button>
             </div>
 
             <img src="images/cat_tree.svg" alt="cat tree" width="525">
 
-            <div>
-                <h3>your chance of waking <span style="color: #9A8479">mona</span> up is</h3>
+            <div id="mona" class="hide">
                 <!-- score will be a h3 in here -->
                 <!-- depending on the scenario, "cloud's asleep, cloud's almost awake, or cloud's awake will show" -->
                 <!-- text if it's switching to mona's turn -->
-                <h3>86%</h3>
-                <h3><span style="color: #9A8479">mona's</span> asleep</h3>
-                <button>continue?</button>
-                <button><span style="color: #707070">cloud's</span> turn</button>
             </div>
 
         </section>
@@ -76,11 +65,11 @@
             <p>Zzz... is a simple game of chance, where you compete with another player to make sure you don’t wake your respective cat - cloud or mona - while finishing your last chore.</p>
             <p>A player is randomly chosen to start their chore, and their cat's name (cloud or mona) will then appear on top of the cat. When you hit the work button, you start to work on your chore and you will be accordingly assigned a score. This score tells you how close you were to waking your cat up at each step of the chore. You have 9 steps to complete the chore.</p>
             <p>If you receive the following scores - 11, 22, 33, 44, 55, 66, 77, or 99, you have disturbed your cat's nap, and they will peer grumpily at you. However, your cat is able to go back to sleep. However, you forfeit your turn as you have disturbed your cat's nap.</p>
-            <p>If you receive the following scores - 1, 25, 50, 75, or 100, you have woken your cat up, and you have failed to successfully complete your chore. Consequently, you forfeit your turn and you have to start you chores all over again (reset).</p>
+            <p>If you receive the following scores - 25, 50, 75, or 100, you have woken your cat up, and you have failed to successfully complete your chore. Consequently, you forfeit your turn and you have to start you chores all over again (reset).</p>
             <p>To win, the player with the least number of disturbances and failures wins, and is rewarded with a gently snoring cat.</p>
             <p>You can always click the "i" button on the top right to view these rules.</p>
             <p>Pressing Esc will close the overlay, but will NOT start the game. Click the button below to start the game.</p>
-            <button>Ready? Let's play!</button>
+            <button id="startgame">Ready? Let's play!</button>
         </article>
     </section>
     
