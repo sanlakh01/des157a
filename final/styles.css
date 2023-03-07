@@ -1,0 +1,62 @@
+/* body and page margin */
+body{
+    background-image: url(../images/stars.svg);
+    height: 100%;
+    background-color: #000009;
+    margin: 2%;
+}
+/* ------------------------------------------------------- */
+/* text styling */
+p{
+    color: #d6d6d6;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    font-size: 18px;
+}
+header p{
+    font-style: italic;
+    font-size: 16px;
+    color: #D3C9E3;
+}
+header h1{
+    font-family: 'Lilita One', sans-serif;
+    font-weight: 900;
+    color: #999999;
+}
+h3{
+    font-family: 'Lilita One', sans-serif;
+    font-kerning: auto;
+    margin-top: 0;
+    color: #999999;
+    font-size: 24px;
+    text-decoration: underline;
+}
+/* ------------------------------------------------------- */
+/*header display styling*/
+header{
+    text-align: center;
+    background-color:#000009b8;
+}
+/* ------------------------------------------------------- */
+/*article styling*/
+main{
+    border: 1px solid #3d3d3d;
+    border-radius: 10px;
+    padding: 4% 10%;
+    margin: 2%;
+    background-color:#000009b8;
+}
+/* ------------------------------------------------------- */
+/*footer styling*/
+footer{
+    margin-top: 3%;
+}
+footer p{
+    text-align: center;
+    font-style: italic;
+    color: #999999;
+    font-weight: 700;
+    font-kerning: normal;
+}
+/* ------------------------------------------------------- */
