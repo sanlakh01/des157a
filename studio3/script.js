@@ -62,15 +62,13 @@
             mona.className = "show";
             mona.innerHTML = '<h3>your chance of waking <span style="color: #9A8479">mona</span> up is</h3>';
             mona.innerHTML += "<h3></h3>";
-            // mona.innerHTML += '<button id="chore">chore time!</button>';
             cloud.className = "hide";
         }
         else{
             //cloud
             cloud.className = "show";
-            // cloud.innerHTML = '<h3>your chance of waking <span style="color: #707070">cloud</span> up is</h3>';
+            cloud.innerHTML = '<h3>your chance of waking <span style="color: #707070">cloud</span> up is</h3>';
             cloud.innerHTML += "<h3></h3>";
-            // cloud.innerHTML += '<button id="chore">chore time!</button>';
             mona.className = "hide";
         }
 

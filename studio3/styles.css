@@ -67,7 +67,7 @@ main{
     top: -70px;
     left: 810px;
 }
-#sml{
+#smm, #am, #smc, #ac{
     position: absolute;
     top: 60px;
     left: 0;
@@ -167,5 +167,5 @@ section:last-of-type div:last-of-type{
 /* ------------------------------------------------------- */
 /*footer position*/
 footer{
-    margin-top: 570px;
+    margin-top: 590px;
 }
