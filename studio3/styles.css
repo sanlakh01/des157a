@@ -67,6 +67,11 @@ main{
     top: -70px;
     left: 810px;
 }
+#sml{
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
 /* ------------------------------------------------------- */
 /*status boxes*/
 div{
@@ -111,7 +116,7 @@ div{
     background-color: #3d3d3d;
     color: #D3C9E3;
     font-size: 18px;
-    margin: 0 650px;
+    margin: 0 43%;
 }
 /* ------------------------------------------------------- */
 /*visibility styles*/
