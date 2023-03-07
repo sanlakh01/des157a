@@ -80,6 +80,7 @@
         playGame();
     }
 
+    //global event listener for chore
     document.addEventListener("click", function(event){
 
         event.stopPropagation();
