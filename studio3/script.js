@@ -62,13 +62,18 @@
             mona.className = "show";
             mona.innerHTML = '<h3>your chance of waking <span style="color: #9A8479">mona</span> up is</h3>';
             mona.innerHTML += "<h3></h3>";
+            document.querySelector("#two h3").className = "show";
+            document.querySelector("#one h3").className = "hide";
             cloud.className = "hide";
+
         }
         else{
             //cloud
             cloud.className = "show";
             cloud.innerHTML = '<h3>your chance of waking <span style="color: #707070">cloud</span> up is</h3>';
             cloud.innerHTML += "<h3></h3>";
+            document.querySelector("#one h3").className = "show";
+            document.querySelector("#two h3").className = "hide";
             mona.className = "hide";
         }
 
@@ -95,6 +100,7 @@
     //records random number generator, shows the total. 
     function playGame(){
 
+        console.log(`${gameData.count[0]} & ${gameData.count[1]}`)
         if(gameData.count[0] === 8 || gameData.count[1] === 8){
             checkWinningCondition();
 
@@ -116,7 +122,7 @@
 
         gameData.sum[gameData.index] = gameData.var1 + gameData.var2;
 
-        if(!(gameData.sum[gameData.index] % 2) && !(gameData.sum[gameData.index] % 3)){
+        if(!(gameData.sum[gameData.index] % 9)){
 
             //failing condition
             if(gameData.index){
@@ -124,12 +130,21 @@
                 document.getElementById("awake").style.color = "#811919";
                 mona.innerHTML += `<h3>${gameData.sum[gameData.index]}</h3>`;
                 mona.innerHTML += '<h3><span style="color: #707070">cloud&lsquo;s</span> turn</h3>';
+                //corresponding cat pics
+                document.getElementById("sm").className = "hide";
+                document.getElementById("smm").className = "hide";
+                document.getElementById("am").className = "show";
             }
             else{
                 cloud.innerHTML += '<h3 id="awake">Cloud is awake!</h3>';
                 document.getElementById("awake").style.color = "#811919";
                 cloud.innerHTML += `<h3>${gameData.sum[gameData.index]}</h3>`;
                 cloud.innerHTML += '<h3><span style="color: #9A8479">mona&lsquo;s</span> turn</h3>';
+
+                //corresponding cat pics
+                document.getElementById("sc").className = "hide";
+                document.getElementById("smc").className = "hide";
+                document.getElementById("ac").className = "show";
             }
 
             gameData.score[gameData.index] = 0; 
@@ -139,7 +154,7 @@
 
             setTimeout(setUpTurn, 3000);
         }
-        else if(!(gameData.sum[gameData.index] % 3)){
+        else if(!(gameData.sum[gameData.index] % 5)){
 
             //semi fail condition
             
@@ -147,11 +162,19 @@
                 mona.innerHTML += `<h3>${gameData.sum[gameData.index]}</h3>`;
                 mona.innerHTML += '<h3 id="semi">Mona was disturbed!</h3>';
                 mona.innerHTML += '<h3><span style="color: #707070">cloud&lsquo;s</span> turn</h3>';
+                //corresponding cat pics
+                document.getElementById("sm").className = "hide";
+                document.getElementById("smm").className = "show";
+                document.getElementById("am").className = "hide";
             }
             else{
                 cloud.innerHTML += `<h3>${gameData.sum[gameData.index]}</h3>`;
                 cloud.innerHTML += '<h3 id="semi">Cloud was disturbed!</h3>';
                 cloud.innerHTML += '<h3><span style="color: #9A8479">mona&lsquo;s</span> turn</h3>';
+                //corresponding cat pics
+                document.getElementById("sc").className = "hide";
+                document.getElementById("smc").className = "show";
+                document.getElementById("ac").className = "hide";
                 
             }
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
@@ -159,20 +182,27 @@
             setTimeout(setUpTurn, 2000);
         }
         else{
-
-            gameData.count[gameData.index]++;
+            //pass condition
 
             if(gameData.index){
                 mona.innerHTML += `<h3>${gameData.sum[gameData.index]}</h3>`;
                 mona.innerHTML += '<h3 id="sleep">Mona is asleep!</h3>';
                 document.getElementById("sleep").style.color = "#1D6716";
                 mona.innerHTML += '<button id="chore">chore time!</button> <button id="pass">cloud&lsquo;s turn</button>';
+                //corresponding cat pics
+                document.getElementById("sm").className = "show";
+                document.getElementById("smm").className = "hide";
+                document.getElementById("am").className = "hide";
             }
             else{
                 cloud.innerHTML += `<h3>${gameData.sum[gameData.index]}</h3>`;
                 cloud.innerHTML += '<h3 id="sleep">Cloud is asleep!</h3>';
                 document.getElementById("sleep").style.color = "#1D6716";
-                cloud.innerHTML += '<button id="chore">chore time!</button> <button id="pass">mona&lsquo;s turn</button>';                
+                cloud.innerHTML += '<button id="chore">chore time!</button> <button id="pass">mona&lsquo;s turn</button>';  
+                //corresponding cat pics
+                document.getElementById("sc").className = "show";
+                document.getElementById("smc").className = "hide";
+                document.getElementById("ac").className = "hide";
             }
 
         }
