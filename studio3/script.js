@@ -152,7 +152,7 @@
  
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
 
-            setTimeout(setUpTurn, 3000);
+            setTimeout(setUpTurn, 2000);
         }
         else if(!(gameData.sum[gameData.index] % 5)){
 
@@ -216,7 +216,7 @@
             //stop the game..
         overlay.className = "show";
 
-        gameData.fails[0] > gameData.fails[1] ? (overlay.innerHTML = "<h2>Cloud's parent was most successful. Enjoy his snores!</h2>") : (overlay.innerHTML = "<h2>Mona's parent was most successful. Enjoy her snores!</h2>");
+        gameData.fails[0] > gameData.fails[1] ? (overlay.innerHTML = '<h2>Cloud&lsquo;s parent was most successful. Enjoy his snores!</h2> <audio autoplay controls style="margin-left: 40%;"><source src="sounds/cloud.mp3" type="audio/mp3"></audio>') : (overlay.innerHTML = '<h2>Mona&lsquo;s parent was most successful. Enjoy her snores!</h2> <audio autoplay controls style="margin-left: 40%"><source src="sounds/mona.mp3" type="audio/mp3"></audio>');
 
         overlay.innerHTML += '<button id="new">play again?</button>';
 
