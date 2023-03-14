@@ -9,7 +9,8 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    margin: 2% 4%
+    margin: 2% 4%;
+    align-items: center;
 }
 /* ------------------------------------------------------- */
 /* header button styles */
@@ -38,6 +39,112 @@ main img{
     width: 95vw;
     margin: auto;
     display: block;
+}
+.start{
+    width: 95vw;
+    transition: all 3s ease;
+    left: 0;
+    top: 0;
+}
+.one{
+    position: absolute;
+    transition: all 3s ease;
+    top: -700px;
+    left: 700px;
+    width: 4032px;
+}
+/* ------------------------------------------------------- */
+/* earring styles */
+main{    
+    position: relative;
+}
+#one{
+    /* white moon phases*/
+    width: 160px;
+    height: 200px;
+    position: absolute;
+    background-color: rgba(172, 255, 47, 0.714);
+    left: 75px;
+    top: 260px;
+}
+#two{
+    /* black moon with gold star on top */
+    width: 160px;
+    height: 200px;
+    position: absolute;
+    background-color: rgba(255, 228, 196, 0.746);
+    left: 230px;
+    top: 150px;
+}
+#three{
+    /* green moon phases */
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    background-color: rgba(218, 165, 32, 0.643);
+    left: 380px;
+    top: 100px;
+}
+#four{
+    /* cuffs */
+    width: 260px;
+    height: 350px;
+    position: absolute;
+    background-color: rgba(95, 158, 160, 0.395);
+    left: 560px;
+    top: 150px;
+}
+#five{
+    /* silver SG star and moon pair */
+    width: 200px;
+    height: 130px;
+    position: absolute;
+    background-color: rgba(139, 69, 19, 0.743);
+    left: 850px;
+    top: 120px;
+}
+#six{
+    /* black arch with neg moon and star */
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    background-color: rgba(0, 255, 255, 0.676);
+    left: 800px;
+    top: 250px;
+}
+#seven{
+    /* copper */
+    width: 200px;
+    height: 350px;
+    position: absolute;
+    background-color: rgba(255, 127, 80, 0.646);
+    left: 1050px;
+    top: 100px;
+}
+#eight{
+    /* moon with stars */
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    background-color: rgba(255, 0, 255, 0.578);
+    left: 1230px;
+    top: 100px;
+}
+/* ------------------------------------------------------- */
+/* information content box styles */
+#content{
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    box-sizing: border-box;
+    width: 250px;
+    background-color: #d3c9e3da;
+    border-radius: 20px;
+    border: 2px solid #3d3d3d;
+    padding: 10px;
+    transition-property: opacity, visibility;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
 }
 /* ------------------------------------------------------- */
 /* visibility class styles */
