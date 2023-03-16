@@ -1,0 +1,232 @@
+/* ------------------------------------------------------- */
+/* body styles */
+body{
+    margin: 0;
+    background-color: #000009;
+}
+/* ------------------------------------------------------- */
+/* header styles */
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+}
+/* ------------------------------------------------------- */
+/* header button styles */
+header button{
+    background-color: #ffffff00;
+    border: none;
+    font-family: "Lato", sans-serif;
+    padding: 10px 30px;
+    border-radius: 60px;
+    cursor: pointer;
+}
+/* ------------------------------------------------------- */
+/* text styles */
+h2{
+    font-family: 'Lilita One', sans-serif;
+    font-weight: 400;
+    color: #D3C9E3;
+    margin: 0;
+}
+p{
+    font-family: 'Lato', sans-serif;
+}
+/* ------------------------------------------------------- */
+/*image zoom style */
+#container img{
+    margin-left: 2%;
+    margin-right: 0;
+    display: block;
+    width: 1460px;
+    transition: all 3s ease;
+    position: absolute;
+}
+.start{
+    width: 1460px;
+    top: 0;
+    left: 0;
+}
+.one, .two, .three, .four, .five, .six, .seven, .eight{
+    width: 4032px;
+}
+.one{
+    top: -160px;
+    left: 100px;
+}
+.two{
+    top: -40px;
+    left: 200px;
+}
+.three{
+    top: -80px;
+    left: 200px;
+}
+.four{
+    top: -60px;
+    left: 200px;
+}
+.five{
+    top: 20px;
+    left: 200px;
+}
+.six{
+    top: 40px;
+    left: 200px;
+}
+.seven{
+    top: 10px;
+    left: 200px;
+}
+.eight{
+    top: 50px;
+    left: 200px;
+}
+/* ------------------------------------------------------- */
+/* earring styles */
+#container{
+    overflow: hidden;
+    position: relative;
+    width: 1520px;
+    height: 579px;
+}
+#one, #two, #three, #four, #five, #six, #seven, #eight{
+    cursor: pointer;
+}
+#one{
+    /* white moon phases*/
+    width: 160px;
+    height: 200px;
+    position: absolute;
+    left: 75px;
+    top: 260px;
+}
+#two{
+    /* black moon with gold star on top */
+    width: 160px;
+    height: 200px;
+    position: absolute;
+    left: 230px;
+    top: 150px;
+}
+#three{
+    /* green moon phases */
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    /* background-color: rgba(218, 165, 32, 0.643); */
+    left: 380px;
+    top: 100px;
+}
+#four{
+    /* cuffs */
+    width: 260px;
+    height: 350px;
+    position: absolute;
+    /* background-color: rgba(95, 158, 160, 0.395); */
+    left: 560px;
+    top: 150px;
+}
+#five{
+    /* silver SG star and moon pair */
+    width: 200px;
+    height: 130px;
+    position: absolute;
+    /* background-color: rgba(139, 69, 19, 0.743); */
+    left: 850px;
+    top: 120px;
+}
+#six{
+    /* black arch with neg moon and star */
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    /* background-color: rgba(0, 255, 255, 0.676); */
+    left: 800px;
+    top: 250px;
+}
+#seven{
+    /* copper */
+    width: 200px;
+    height: 350px;
+    position: absolute;
+    /* background-color: rgba(255, 127, 80, 0.646); */
+    left: 1050px;
+    top: 100px;
+}
+#eight{
+    /* moon with stars */
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    /* background-color: rgba(255, 0, 255, 0.578); */
+    left: 1230px;
+    top: 100px;
+}
+/* ------------------------------------------------------- */
+/* information content box styles */
+#content{
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    box-sizing: border-box;
+    width: 250px;
+    height: 300px;
+    background-color: #d3c9e3da;
+    border-radius: 20px;
+    border: 2px solid #3d3d3d;
+    padding: 10px;
+    transition-property: opacity, visibility;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+}
+/* ------------------------------------------------------- */
+/* visibility class styles */
+.hide{
+    visibility: hidden;
+}
+.show{
+    visibility: visible;
+}
+/* ------------------------------------------------------- */
+/* footer styles */
+footer{
+    margin: 2% 4%;
+}
+footer p{
+    text-align: center;
+    color: #999999;
+    font-weight: 700;
+    font-kerning: normal;
+    margin: 0;
+}
+/* ------------------------------------------------------- */
+/* overlay styles */
+#overlay{
+    width: 99vw;
+    height: 99vh;
+    position: fixed;
+    background-color: #000009;
+    background-image: url(../../images/stars.svg);
+    top: 0;
+    left: 0;
+}
+#overlay p:first-of-type{
+    margin-top: 19%;
+}
+#overlay p{
+    color: #d6d6d6;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    background-color: #000009a2;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#overlay p:last-of-type{
+    margin-top: 50px;
+    color: #D3C9E3;
+    text-decoration: underline;
+}
