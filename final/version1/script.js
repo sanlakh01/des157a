@@ -3,7 +3,7 @@
     "use strict";
     console.log("reading javascript");
     const btns = document.querySelectorAll("button");
-    const hotSpots = document.querySelectorAll('main div');
+    const hotSpots = document.querySelectorAll(' div');
     const theImg = document.getElementById("image");
 
     const aBody = document.querySelector("body");
@@ -34,16 +34,25 @@
        thisSpot = event.target.id;
        console.log(`zooming into ${thisSpot}`);
        switch (thisSpot) {
-           case 'one': theImg.className = 'one'; break;
-           case 'two': theImg.className = 'two'; break;
-           case 'three': theImg.className = 'three'; break;
-           case 'four': theImg.className = 'four'; break;
-           case 'five': theImg.className = 'five'; break;
-           case 'six': theImg.className = 'six'; break;
-           case 'seven': theImg.className = 'seven'; break;
-           case 'eight': theImg.className = 'eight'; break;
+           case 'one': theImg.className = 'one';
+                        aBody.style.backgroundColor = "#765b95"; 
+                        break;
+           case 'two': theImg.className = 'two'; 
+                        break;
+           case 'three': theImg.className = 'three'; 
+                        break;
+           case 'four': theImg.className = 'four'; 
+                        break;
+           case 'five': theImg.className = 'five'; 
+                        break;
+           case 'six': theImg.className = 'six'; 
+                        break;
+           case 'seven': theImg.className = 'seven'; 
+                        break;
+           case 'eight': theImg.className = 'eight'; 
+                        break;
        }
-       aBody.style.backgroundColor = "#765b95";
+       
    }
 
    // Add event listeners to each of the hotspots

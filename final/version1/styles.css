@@ -9,7 +9,7 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    margin: 2% 4%;
+    margin: 20px;
     align-items: center;
 }
 /* ------------------------------------------------------- */
@@ -34,36 +34,39 @@ p{
     font-family: 'Lato', sans-serif;
 }
 /* ------------------------------------------------------- */
-/* main image style */
-main img{
-    width: 95vw;
-    margin: auto;
+/*image zoom style */
+#container img{
+    margin-left: 2%;
+    margin-right: 0;
     display: block;
+    width: 1460px;
+    transition: all 3s ease;
+    position: absolute;
 }
 .start{
-    width: 95vw;
-    transition: all 3s ease;
-    left: 0;
+    width: 1460px;
     top: 0;
+    left: 0;
 }
 .one{
-    position: absolute;
-    transition: all 3s ease;
-    top: -700px;
-    left: 700px;
     width: 4032px;
+    top: -160px;
+    left: 100px;
 }
 /* ------------------------------------------------------- */
 /* earring styles */
-main{    
+#container{
+    overflow: hidden;
     position: relative;
+    width: 1520px;
+    height: 579px;
 }
 #one{
     /* white moon phases*/
     width: 160px;
     height: 200px;
     position: absolute;
-    background-color: rgba(172, 255, 47, 0.714);
+    /* background-color: rgba(172, 255, 47, 0.714); */
     left: 75px;
     top: 260px;
 }
@@ -72,7 +75,7 @@ main{
     width: 160px;
     height: 200px;
     position: absolute;
-    background-color: rgba(255, 228, 196, 0.746);
+    /* background-color: rgba(255, 228, 196, 0.746); */
     left: 230px;
     top: 150px;
 }
@@ -81,7 +84,7 @@ main{
     width: 200px;
     height: 400px;
     position: absolute;
-    background-color: rgba(218, 165, 32, 0.643);
+    /* background-color: rgba(218, 165, 32, 0.643); */
     left: 380px;
     top: 100px;
 }
@@ -90,7 +93,7 @@ main{
     width: 260px;
     height: 350px;
     position: absolute;
-    background-color: rgba(95, 158, 160, 0.395);
+    /* background-color: rgba(95, 158, 160, 0.395); */
     left: 560px;
     top: 150px;
 }
@@ -99,7 +102,7 @@ main{
     width: 200px;
     height: 130px;
     position: absolute;
-    background-color: rgba(139, 69, 19, 0.743);
+    /* background-color: rgba(139, 69, 19, 0.743); */
     left: 850px;
     top: 120px;
 }
@@ -108,7 +111,7 @@ main{
     width: 250px;
     height: 200px;
     position: absolute;
-    background-color: rgba(0, 255, 255, 0.676);
+    /* background-color: rgba(0, 255, 255, 0.676); */
     left: 800px;
     top: 250px;
 }
@@ -117,7 +120,7 @@ main{
     width: 200px;
     height: 350px;
     position: absolute;
-    background-color: rgba(255, 127, 80, 0.646);
+    /* background-color: rgba(255, 127, 80, 0.646); */
     left: 1050px;
     top: 100px;
 }
@@ -126,7 +129,7 @@ main{
     width: 200px;
     height: 300px;
     position: absolute;
-    background-color: rgba(255, 0, 255, 0.578);
+    /* background-color: rgba(255, 0, 255, 0.578); */
     left: 1230px;
     top: 100px;
 }
