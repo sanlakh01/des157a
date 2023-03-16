@@ -2,6 +2,7 @@
     
     "use strict";
     console.log("reading javascript");
+    alert("Task 1: Make the website (it is not fully functional yet, so the website works if the image moves). \nTask 2: Find the instructions/guide. \nGoal: Explore the page. \nEnjoy!");
     const btns = document.querySelectorAll("button");
     const hotSpots = document.querySelectorAll('#container div');
     const theImg = document.getElementById("image");
