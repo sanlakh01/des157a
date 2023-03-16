@@ -48,10 +48,40 @@ p{
     top: 0;
     left: 0;
 }
-.one{
+.one, .two, .three, .four, .five, .six, .seven, .eight{
     width: 4032px;
+}
+.one{
     top: -160px;
     left: 100px;
+}
+.two{
+    top: -40px;
+    left: 200px;
+}
+.three{
+    top: -80px;
+    left: 200px;
+}
+.four{
+    top: -60px;
+    left: 200px;
+}
+.five{
+    top: 20px;
+    left: 200px;
+}
+.six{
+    top: 40px;
+    left: 200px;
+}
+.seven{
+    top: 10px;
+    left: 200px;
+}
+.eight{
+    top: 50px;
+    left: 200px;
 }
 /* ------------------------------------------------------- */
 /* earring styles */
@@ -61,12 +91,14 @@ p{
     width: 1520px;
     height: 579px;
 }
+#one, #two, #three, #four, #five, #six, #seven, #eight{
+    cursor: pointer;
+}
 #one{
     /* white moon phases*/
     width: 160px;
     height: 200px;
     position: absolute;
-    /* background-color: rgba(172, 255, 47, 0.714); */
     left: 75px;
     top: 260px;
 }
@@ -75,7 +107,6 @@ p{
     width: 160px;
     height: 200px;
     position: absolute;
-    /* background-color: rgba(255, 228, 196, 0.746); */
     left: 230px;
     top: 150px;
 }
@@ -141,6 +172,7 @@ p{
     left: 200px;
     box-sizing: border-box;
     width: 250px;
+    height: 300px;
     background-color: #d3c9e3da;
     border-radius: 20px;
     border: 2px solid #3d3d3d;
