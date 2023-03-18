@@ -48,7 +48,7 @@ p{
     top: 0;
     left: 0;
 }
-.one, .two, .three, .four, .five, .six, .seven, .eight{
+#container .one, #container .two, #container .three, #container .four, #container .five, #container .six, #container .seven, #container .eight{
     width: 4032px;
 }
 .one{
