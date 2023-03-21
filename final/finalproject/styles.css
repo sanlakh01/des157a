@@ -1,0 +1,280 @@
+/* ------------------------------------------------------- */
+/* body styles */
+body{
+    margin: 0;
+    background-color: #000009;
+}
+/* ------------------------------------------------------- */
+/* header styles */
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+}
+/* ------------------------------------------------------- */
+/* header button styles */
+header button{
+    background-color: #ffffff00;
+    border: none;
+    font-family: "Lato", sans-serif;
+    padding: 10px 30px;
+    border-radius: 60px;
+    cursor: pointer;
+}
+/* ------------------------------------------------------- */
+/* text styles */
+h2{
+    font-family: 'Lilita One', sans-serif;
+    font-weight: 400;
+    color: #D3C9E3;
+    margin: 0;
+}
+p{
+    font-family: 'Lato', sans-serif;
+}
+/* ------------------------------------------------------- */
+/*image zoom style */
+#container img{
+    margin-left: 20px;
+    margin-right: 0;
+    display: block;
+    width: 1460px;
+    transition: all 3s ease;
+    position: absolute;
+}
+.start{
+    width: 1460px;
+    top: 0;
+    left: 0;
+}
+#container .one, #container .two, #container .five, #container .six{
+    width: 4032px;
+}
+#container .three, #container .eight{
+    width: 3032px;
+}
+#container .four, #container .seven{
+    width: 2782px;
+}
+.one{
+    top: -750px;
+    left: 600px;
+}
+.two{
+    top: -400px;
+    left: 550px;
+}
+.three{
+    top: -320px;
+    left: 250px;
+}
+.four{
+    top: -320px;
+    left: -60px;
+}
+.five{
+    top: -200px;
+    left: -1500px;
+}
+.six{
+    top: -600px;
+    left: -1300px;
+}
+.seven{
+    top: -200px;
+    left: -900px;
+}
+.eight{
+    top: -200px;
+    left: -1400px;
+}
+/* ------------------------------------------------------- */
+/* earring styles */
+#container{
+    overflow: hidden;
+    position: relative;
+    width: 1520px;
+    height: 579px;
+}
+#one, #two, #three, #four, #five, #six, #seven, #eight{
+    cursor: pointer;
+}
+#one{
+    /* white moon phases*/
+    width: 160px;
+    height: 200px;
+    position: absolute;
+    left: 75px;
+    top: 260px;
+}
+#two{
+    /* black moon with gold star on top */
+    width: 160px;
+    height: 200px;
+    position: absolute;
+    left: 230px;
+    top: 150px;
+}
+#three{
+    /* green moon phases */
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    /* background-color: rgba(218, 165, 32, 0.643); */
+    left: 380px;
+    top: 100px;
+}
+#four{
+    /* cuffs */
+    width: 260px;
+    height: 350px;
+    position: absolute;
+    /* background-color: rgba(95, 158, 160, 0.395); */
+    left: 560px;
+    top: 150px;
+}
+#five{
+    /* silver SG star and moon pair */
+    width: 200px;
+    height: 130px;
+    position: absolute;
+    /* background-color: rgba(139, 69, 19, 0.743); */
+    left: 850px;
+    top: 120px;
+}
+#six{
+    /* black arch with neg moon and star */
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    /* background-color: rgba(0, 255, 255, 0.676); */
+    left: 800px;
+    top: 250px;
+}
+#seven{
+    /* copper */
+    width: 200px;
+    height: 350px;
+    position: absolute;
+    /* background-color: rgba(255, 127, 80, 0.646); */
+    left: 1050px;
+    top: 100px;
+}
+#eight{
+    /* moon with stars */
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    /* background-color: rgba(255, 0, 255, 0.578); */
+    left: 1230px;
+    top: 100px;
+}
+/* ------------------------------------------------------- */
+/* information content box styles */
+#content{
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    box-sizing: border-box;
+    width: 740px;
+    height: 540px;
+    background-color: #d3c9e3da;
+    border-radius: 20px;
+    border: 10px solid #D3C9E3;
+    padding: 20px;
+    transition-property: opacity, visibility;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    display: flex;
+    align-items: center;
+}
+#content>p{
+    color: #353535;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 1.5em;
+    font-style: italic;
+    font-weight: 700;
+    margin: auto 5%;
+}
+/* ------------------------------------------------------- */
+/* visibility class styles */
+.hide{
+    visibility: hidden;
+}
+.show{
+    visibility: visible;
+}
+/* ------------------------------------------------------- */
+/* footer styles */
+footer{
+    margin: 2% 4%;
+}
+footer p{
+    text-align: center;
+    color: #999999;
+    font-weight: 700;
+    font-kerning: normal;
+    margin: 0;
+}
+/* ------------------------------------------------------- */
+/* overlay styles - info */
+#overlay, #shopping{
+    width: 99vw;
+    height: 99vh;
+    position: fixed;
+    background-color: #000009;
+    background-image: url(../../images/stars.svg);
+    top: 0;
+    left: 0;
+}
+#overlay p:first-of-type{
+    margin-top: 19%;
+}
+#overlay p{
+    color: #d6d6d6;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    background-color: #000009a2;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#overlay p:last-of-type, #shopping p:last-of-type{
+    margin-top: 50px;
+    color: #D3C9E3;
+    text-decoration: underline;
+    text-align: center;
+}
+/* ------------------------------------------------------- */
+/* overlay styles - shopping */
+#shopping p:first-of-type{
+    margin-top: 10%;
+}
+#shopping p{
+    font-style: italic;
+    text-align: left;
+    font-size: 20px;
+    margin: auto 4%;
+    color: #999999;
+    background-color: #000009a2;
+}
+#shopping ul{
+    margin: 3% 4%;
+    background-color: #000009a2;
+}
+#shopping ul li{    
+    font-family: 'Lato', sans-serif;
+    color: #d6d6d6;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 1%;
+}
+#shopping ul li a{
+    font-family: 'Lato', sans-serif;
+}
+a:link, a:visited{
+    color: #d6d6d6;
+}
