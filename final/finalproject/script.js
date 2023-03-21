@@ -8,10 +8,22 @@
     const content = document.getElementById("content");
     const aBody = document.querySelector("body");
 
+    //the following function runs the pre-loader
+    window.addEventListener("load", function(){
+        const preloader = document.getElementById('preloader');
+		preloader.className = 'fadeout';
+
+		// wait until the animation has completed
+		preloader.addEventListener('animationend', function () {
+
+			//once the animation is done, remove the preloader div.
+			preloader.style.display = 'none';
+		});
+    });
+
     //instructional overlay - to view
     btns[1].addEventListener("click", function(event){
         event.preventDefault();
-
         document.getElementById("overlay").className = "show";
     });
 
@@ -27,7 +39,6 @@
     //shopping viewing!
     btns[0].addEventListener("click", function(event){
         event.preventDefault();
-
         document.getElementById("shopping").className = "show";
     });
 
@@ -95,13 +106,13 @@
     });
 
     document.addEventListener('mousemove', function(){
-    clearTimeout(movingMouse);
-    if(thisSpot == 'out'){
-        movingMouse = setTimeout(function(){
-            theImg.className = 'start';
-            console.log('zooming out!');
-            document.getElementById("content").className = "hide";
-        }, 1000);
-    }
+        clearTimeout(movingMouse);
+        if(thisSpot == 'out'){
+            movingMouse = setTimeout(function(){
+                theImg.className = 'start';
+                console.log('zooming out!');
+            }, 1000);
+        }
+        document.getElementById("content").className = "hide";
     }); 
 })();
