@@ -2,7 +2,7 @@
 /* body styles */
 body{
     margin: 0;
-    background-color: #000009;
+    background-color: #765b95;
 }
 /* ------------------------------------------------------- */
 /* header styles */
@@ -121,7 +121,6 @@ p{
     width: 200px;
     height: 400px;
     position: absolute;
-    /* background-color: rgba(218, 165, 32, 0.643); */
     left: 380px;
     top: 100px;
 }
@@ -130,7 +129,6 @@ p{
     width: 260px;
     height: 350px;
     position: absolute;
-    /* background-color: rgba(95, 158, 160, 0.395); */
     left: 560px;
     top: 150px;
 }
@@ -139,7 +137,6 @@ p{
     width: 200px;
     height: 130px;
     position: absolute;
-    /* background-color: rgba(139, 69, 19, 0.743); */
     left: 850px;
     top: 120px;
 }
@@ -148,7 +145,6 @@ p{
     width: 250px;
     height: 200px;
     position: absolute;
-    /* background-color: rgba(0, 255, 255, 0.676); */
     left: 800px;
     top: 250px;
 }
@@ -157,7 +153,6 @@ p{
     width: 200px;
     height: 350px;
     position: absolute;
-    /* background-color: rgba(255, 127, 80, 0.646); */
     left: 1050px;
     top: 100px;
 }
@@ -166,7 +161,6 @@ p{
     width: 200px;
     height: 300px;
     position: absolute;
-    /* background-color: rgba(255, 0, 255, 0.578); */
     left: 1230px;
     top: 100px;
 }
@@ -188,6 +182,7 @@ p{
     transition-timing-function: ease;
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 #content>p{
     color: #353535;
@@ -197,6 +192,20 @@ p{
     font-style: italic;
     font-weight: 700;
     margin: auto 5%;
+}
+#content button{
+    background-color: #d6d6d6;
+    color: #3d3d3d;
+    border: none;
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    padding: 10px 30px;
+    border-radius: 60px;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
 }
 /* ------------------------------------------------------- */
 /* visibility class styles */
