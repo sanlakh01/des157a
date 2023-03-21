@@ -230,8 +230,8 @@ footer p{
 /* ------------------------------------------------------- */
 /* overlay styles - info */
 #overlay, #shopping{
-    width: 99vw;
-    height: 99vh;
+    width: 100vw;
+    height: 100vh;
     position: fixed;
     background-color: #000009;
     background-image: url(../../images/stars.svg);
